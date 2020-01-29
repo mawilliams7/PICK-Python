@@ -753,6 +753,7 @@ class Ui_PICK(object):
         self.tabWidget.currentChanged.connect(self.onTabChange)
 
     def handleExport(self):
+        print()
         if self.vectorComboBoxTable.count() > 0:
             self.vectorGraphWidget.export()
             self.exportVectorTable(self.vectorComboBoxTable.currentText())
